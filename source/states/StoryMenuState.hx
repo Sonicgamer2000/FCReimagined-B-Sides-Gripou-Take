@@ -53,7 +53,7 @@ class StoryMenuState extends MusicBeatState
 
 		#if desktop
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("Story Menu", null);
+		DiscordClient.changePresence("In the Story Menu", null);
 		#end
 
 		scoreText = new FlxText(10, 10, 0, "SCORE: 49324858", 36);
