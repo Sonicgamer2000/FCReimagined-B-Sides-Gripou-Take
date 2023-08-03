@@ -51,6 +51,11 @@ class StoryMenuState extends MusicBeatState
 		if(curWeek >= WeekData.weeksList.length) curWeek = 0;
 		persistentUpdate = persistentDraw = true;
 
+		#if desktop
+		// Updating Discord Rich Presence
+		DiscordClient.changePresence("Story Menu", null);
+		#end
+
 		scoreText = new FlxText(10, 10, 0, "SCORE: 49324858", 36);
 		scoreText.setFormat("VCR OSD Mono", 32);
 
